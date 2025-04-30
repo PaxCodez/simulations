@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Simulations</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module">
+      document.querySelectorAll('.sim-button').forEach(button => {
+        button.addEventListener('click', () => {
+          window.location.href = button.dataset.href;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="/cloth.html">Cloth</a>
+      <a href="/water.html">Water</a>
+      <a href="/softbody.html">Softbody</a>
+      <a href="/balls.html">Balls</a>
+      <a href="/track.html">Track</a>
+    </nav>
+    <main>
+      <div class="simulation-buttons">
+        <h2>Choose a Simulation</h2>
+        <button class="sim-button" data-href="/cloth.html">Cloth Simulation</button>
+        <button class="sim-button" data-href="/water.html">Water Simulation</button>
+        <button class="sim-button" data-href="/softbody.html">Softbody Simulation</button>
+        <button class="sim-button" data-href="/balls.html">Bouncy Balls</button>
+        <button class="sim-button" data-href="/track.html">Ball Track</button>
+      </div>
+    </main>
+  </body>
+</html>

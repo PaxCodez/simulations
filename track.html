@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ball Track</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="track.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="/cloth.html">Cloth</a>
+      <a href="/water.html">Water</a>
+      <a href="/softbody.html">Softbody</a>
+      <a href="/balls.html">Balls</a>
+      <a href="/track.html" aria-current="page">Track</a>
+      <a href="/basket.html">Basket</a>
+      <a href="/sandbox.html">Sandbox</a>
+    </nav>
+    <div class="controls">
+      <button id="clear">Clear Track</button>
+      <button id="addBall">Add Ball</button>
+      <button id="removeBall">Remove Ball</button>
+      <div class="slider-container">
+        <label for="thickness">Track Thickness:</label>
+        <input type="range" id="thickness" min="1" max="20" value="5">
+      </div>
+    </div>
+    <main>
+      <canvas id="canvas"></canvas>
+    </main>
+  </body>
+</html>
